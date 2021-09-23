@@ -21,7 +21,8 @@
     color:white;
     padding-top:180px;
 }
-/* I'll be honest I had to google this cuz I had no idea how to "clip" out the text for a gradiant but it seemed like a neat idea*/
+/* I'll be honest I had to google this cuz I had no idea how 
+to "clip" out the text for a gradiant but it seemed like a neat idea*/
 .mainbackground-text h1{
     font-family: 'Stick No Bills', sans-serif;
     font-weight: bold;
@@ -31,17 +32,17 @@
     -webkit-text-fill-color:transparent;
 }
 .mainbackground-text p{
-    font-size:55px;
+    font-size:85px;
 }
 .mainback-buttons{
-    margin: 15px;
+    margin: 25px;
 }
 .mainback-buttons a{
-    width: 15px;
+    width: 200px;
     display: inline-block;
     margin: 4px 2px;
     color: white; 
-    border: .10px solid black;
+    border: 2px solid black;
     position: relative;
     text-decoration: none;
     z-index: 1;
@@ -65,7 +66,7 @@
 }
 /*This changes text to black to contrast against the white transition. thx GooGle veRy cOoL kaNye */
 .mainback-buttons a:hover {
-    width:100%;
+    
     color:black;
 }
 /* Navigation Bar Left side*/
@@ -117,15 +118,45 @@ nav ul li a{
         font-family: 'Stick No Bills', sans-serif;
         font-weight: bold;
         font-size: 30px;
+        margin-top: -100px;
         background: linear-gradient(rgba(255, 255, 255, 0.2),#000000);
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
     }
-    .mainback-buttons a{
-            display: flex;
-            margin: 10px auto;
+        .mainback-buttons a{
+            width: 15px auto;
+            display: inline-block;
+            margin: 5px 100px;
+            color: white; 
+            border: .10px solid black;
+            position: center;
+            text-decoration: none;
+            z-index: 1;
+            transition: color 0.8s;
+        
         }
-    .mainbackground-text p{
+        .mainback-buttons a span{
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.8s;
+            background: white; opacity:50%;
+            z-index: -1;
+            
+        }
+        .mainbackground-text p{
         font-size: 30px;
+        }  
+         #navigationbar{
+        width: 260px;
+        height: 100vh;
+        position: fixed;
+        top:220px;
+        left:35px;
+        background-color:rgba(0, 0, 0, 0.2)
+        z-index: 2;
+        transition: 0.8s;
     }
     }
