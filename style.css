@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+#mainbackground{
+    background: linear-gradient(rgba(0,0,0,0.2),#000000), url(images/main-background.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.mainlogo{
+    width: 200px;
+    position: absolute;
+    top:2%;
+    left:3%;
+}
+
+.mainbackground-text{
+    text-align:center;
+    color:white;
+    padding-top:180px;
+}
+.mainbackground-text h1{
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    background: linear-gradient(rgba(255, 255, 255, 0.2),#000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.mainbackground-text p{
+    font-size:55px;
+}
+.mainback-buttons{
+    margin: 15px;
+}
+.mainback-buttons a{
+    width: 150px,
+    display: inline-block;
+    margin: 2px 10px;
+    color: white; 
+    border: .5px solid black;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    transition: color 0.8s;
+}
+.mainback-buttons a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.8s;
+    background: white; opacity:50%;
+    z-index: -1;
+    
+}
+.mainback-buttons a:hover span{
+    width:100%;
+
+}
+/*This changes text to black to contrast against the white transition. NEAT */
+.mainback-buttons a:hover {
+    width:100%;
+    color:black;
