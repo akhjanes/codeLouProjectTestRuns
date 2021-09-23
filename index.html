@@ -30,6 +30,43 @@
 
         </div>
     </section>
+<!-- This is where I will add the side bar thing for navigation-->
+<div id="navigationbar">
+    <nav>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">K7</a></li>
+        <li><a href="#">SHIELDING</a></li>
+        <li><a href="#">SAPIENTS</a></li>
+        <li><a href="#">COMMUNICATION</a></li>
+    </ul>
+    </nav>
+</div>
+<div id="navigationbutton">
+    <img src="images/white-menu-icon-.png" id="menuicon">
+</div>
+<!-- creating variables to make a hamburger icon for the navigation links, 
+    so we're making a var for the navigation bar div, the img div and
+    the navigation button div that holds the image, when navigation bar is 35px, and you click it, it 
+    moves it off the screen and hides it at -200px, and if it's anything but 35px, it changes it back
+    also added a transition of 0.8 in css-->
+<script>
+    var navigationbutton = document.getElementById("navigationbutton")
+    var navigationbar = document.getElementById("navigationbar")
+    var menuicon = document.getElementById("menuicon")
 
+    navigationbar.style.left = "-200px"
+
+    menuicon.onclick = function(){
+        if(navigationbar.style.left == "35px"){
+            navigationbar.style.left = "-200px";
+            menuicon.src = "images/white-menu-icon-.png";
+        }
+        else{
+            navigationbar.style.left = "35px";
+            menuicon.src = "images/close-menu-icon.png"
+        }
+    }
+</script>
 </body>
 </html>
